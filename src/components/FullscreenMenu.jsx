@@ -13,10 +13,10 @@ export default function FullscreenMenu() {
           <ul>
             {["Home", "About us", "Portfolio", "Contact"].map((text, i) => {
               return (
-                <li key={i}>
+                <li key={i} style={{ animationDelay: `${100 * i}ms` }}>
                   <a
                     href="#"
-                    onClick={e => {
+                    onClick={(e) => {
                       e.preventDefault();
                       setOpen(false);
                     }}
