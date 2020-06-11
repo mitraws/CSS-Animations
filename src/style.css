@@ -82,3 +82,13 @@ body {
   color: #bc32a2;
   text-decoration: underline;
 }
+
+.FullscreenMenu a {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .FullscreenMenu a:hover {
+    text-decoration: underline;
+  }
