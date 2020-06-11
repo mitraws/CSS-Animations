@@ -8,6 +8,28 @@ export default function FullscreenMenu() {
   return (
     <>
       {open && <div className="FullscreenMenu">hello</div>}
+      {open && (
+        <div className="FullscreenMenu">
+          <ul>
+            {["Home", "About us", "Portfolio", "Contact"].map((text, i) => {
+              return (
+                <li key={i}>
+                  <a
+                    href="#"
+                    onClick={e => {
+                      e.preventDefault();
+                      setOpen(false);
+                    }}
+                  >
+                    {text}
+                  </a>
+                </li>
+              );
+            })}
+          </ul>
+        </div>
+      )}
+
       <button
         className="FullscreenMenuToggler"
         style={{ color: open ? "white" : "black" }}

@@ -9,23 +9,6 @@ export default function App() {
   return (
     <div>
       <FullscreenMenu />
-      <ul>
-            {["Home", "About us", "Portfolio", "Contact"].map((text, i) => {
-              return (
-                <li key={i}>
-                  <a
-                    href="#"
-                    onClick={e => {
-                      e.preventDefault();
-                      setOpen(false);
-                    }}
-                  >
-                    {text}
-                  </a>
-                </li>
-              );
-            })}
-          </ul>
       <div
         className={cx("searchbar", {
           "is-open": open,
